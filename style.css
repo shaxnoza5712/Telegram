@@ -1,0 +1,432 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-display: swap;
+    Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options.
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('./fonts/roboto-v32-cyrillic_latin-300.woff2') format('woff2');
+    Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+
+}
+
+roboto-regular - cyrillic_latin
+@font-face {
+    font-display: swap;
+    Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options.
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/roboto-v32-cyrillic_latin-regular.woff2') format('woff2');
+    Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+
+}
+
+roboto-500 - cyrillic_latin
+@font-face {
+    font-display: swap;
+    Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options.
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./fonts/roboto-v32-cyrillic_latin-500.woff2') format('woff2');
+    Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+
+}
+
+/* roboto-700 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options.
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/roboto-v32-cyrillic_latin-700.woff2') format('woff2');
+    Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+
+}
+
+body {
+    font-family: "roboto";
+}
+
+
+.container {
+    width: 1060px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+
+}
+
+.nav-link {
+    color: #222222;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25.2px;
+
+
+}
+
+.nav-link:hover {
+    color: gray;
+}
+
+.nav-link:active {
+    color: blue;
+    opacity: 60%;
+}
+
+.nav-item {
+    margin-top: 32px;
+}
+
+
+.nav-item_start {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 154px;
+    height: 57px;
+    border-radius: 80px;
+    background-color: #EFAE35;
+}
+
+.nav-item_start:hover {
+    background-color: #c75b2c;
+}
+
+.nav-item_start:active {
+    background-color: burlywood;
+}
+
+.bottom-header {
+    margin-top: 30px;
+    width: 100%;
+    height: 799px;
+    background-image: url(./imeg/card1.jpg);
+    background-repeat: no-repeat;
+
+}
+
+.coment {
+
+    padding-top: 231px;
+    padding-left: 90px;
+}
+
+.header-title {
+    width: 551px;
+    height: 144px;
+    color: #000000;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 72px;
+
+}
+
+.header-page {
+    padding-top: 32px;
+}
+
+.header-span {
+    padding-top: 86px;
+}
+
+.header-button {
+    width: 90px;
+    height: 26px;
+    border-radius: 10px;
+    border: 0.5px solid;
+}
+
+.header-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.header-button:active {
+    background-color: #000000;
+    color: aliceblue;
+    opacity: 50%;
+}
+
+.bottom-header_link {
+    display: flex;
+    padding-top: 25px;
+    width: 77px;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25.2px;
+}
+
+.bottom-header_link:hover {
+    color: gray;
+}
+
+.bottom-header_link:active {
+    opacity: 50%;
+}
+
+.first-section {
+    width: 1020px;
+    height: 640px;
+    margin-top: 116px;
+}
+
+.section-title {
+
+    width: 412px;
+    height: 72px;
+    color: #24160B;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 72px;
+
+
+
+
+}
+
+.section-leftbox {
+    padding-top: 143px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-page {
+    margin-top: 32px;
+    width: 416px;
+    height: 153px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #24160B;
+}
+
+.section-button {
+    width: 134px;
+    height: 57px;
+    background-color: #EFAE35;
+    border-radius: 80px;
+    border: none;
+
+}
+
+.section-button:hover {
+    background-color: rgb(55, 32, 3);
+    color: aliceblue;
+}
+
+.section-button:active {
+    background-color: rgb(237, 152, 40);
+    color: blue;
+    opacity: 60%;
+}
+
+.section-span {
+    margin-top: 51px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.section-link {
+    color: #24160B;
+}
+
+.section-link:hover {
+    color: #df7a2d1f;
+    
+}
+
+.section-link:active {
+    opacity: 60%;
+}
+
+.second-section {
+    margin-top: 261px;
+
+}
+
+.twosection-leftbox {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.twosection-title {
+    width: 347px;
+    height: 115px;
+    color: #24160B;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 57.2px;
+}
+
+.twosection-page {
+    width: 442px;
+    height: 153px;
+    color: #24160B;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30.6px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section-persentage {
+    width: 108px;
+    height: 56px;
+    color: #24160B;
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 56px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.middle-page {
+    width: 398px;
+    height: 45px;
+    color: #24160B;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.mini-page {
+    width: 136px;
+    height: 31px;
+    color: #24160B;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 30.6px;
+}
+
+.twosection-leftbox-2 {
+    flex-direction: row-reverse;
+}
+
+.twosection-title-2 {
+    width: 364px;
+    height: 115px;
+    color: #24160B;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 57.2px;
+}
+
+.footer-section {
+    margin-top: 231px;
+}
+
+/* .footer-top{
+    padding-left: 231px;
+} */
+.title-word {
+    width: 216px;
+    height: 58px;
+    color: #24160B;
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 57.2px;
+}
+
+.title-word {
+    margin-left: 400px;
+
+}
+
+.footer-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 79px;
+    gap: 80px;
+}
+
+.knox {
+    margin-left: 455px;
+    margin-top: 32px;
+
+
+}
+
+.footer-bottom {
+    margin-top: 248px;
+}
+
+.bottom-title {
+    padding-top: 231px;
+    background-image: url(./imeg/card7.jpg);
+    width: 100%;
+    height: 802px;
+    padding-left: 90px;
+}
+
+.title-bottom {
+    width: 443px;
+    height: 72px;
+    color: #FFFFFF;
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 72px;
+    text-align: left;
+
+}
+
+.page-bottom {
+    margin-top: 35px;
+    width: 567px;
+    height: 40px;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 39.6px;
+}
+
+
+
+
+
+.nav-bottom {
+    width: 128px;
+    height: 128px;
+    background-color: #FFFFFF;
+    left: 90px;
+    margin-top: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+
+.watch-now{
+    width: 201px;
+height: 52px;
+color: #FFFFFF;
+font-size: 39px;
+font-weight: 400;
+line-height: 52px;
+
+
+}
+.content{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 16px;
+}
